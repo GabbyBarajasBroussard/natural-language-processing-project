@@ -49,7 +49,7 @@ import requests
 from typing import Dict, List, Optional, Union, cast
 from bs4 import BeautifulSoup
 from env import github_token, github_username
-############################################################################################################################
+###########################################################################################################################################################################
 # TODO: Make a github personal access token.
 #     1. Go here and generate a personal access token https://github.com/settings/tokens
 #        You do _not_ need select any scopes, i.e. leave all the checkboxes unchecked
@@ -59,7 +59,7 @@ from env import github_token, github_username
 
 REPOS = [ 
 ]
-############################################################################################################################
+###########################################################################################################################################################################
 headers = {"Authorization": f"token {github_token}", "User-Agent": github_username}
 
 if headers["Authorization"] == "token " or headers["User-Agent"] == "":
@@ -67,7 +67,7 @@ if headers["Authorization"] == "token " or headers["User-Agent"] == "":
         "You need to follow the instructions marked TODO in this script before trying to use it"
     )
 
-############################################################################################################################
+###########################################################################################################################################################################
 def github_api_request(url: str) -> Union[List, Dict]:
     response = requests.get(url, headers=headers)
     response_data = response.json()
