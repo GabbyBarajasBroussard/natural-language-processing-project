@@ -11,9 +11,7 @@
 
 ## Project Summary:
 - 
-
-
-Data Source: 
+ 
 
 ## Project Goals:
 - Deliver a notebook presentation of models used to isolate drivers of increased length of time spent in the hospital.
@@ -31,7 +29,7 @@ Data Source:
 Progression through the Data Science Pipeline:
 PLAN -> ACQUIRE -> PREPARE -> EXPLORE -> MODEL -> DELIVER
 
-Each step in my process is recorded and staged on a Trello board at: 
+Each step in my process is recorded and staged on a Trello board at: https://trello.com/b/CoF5AaWI/nlp-project
 
 ## Plan:
 - Plan a website or a topic to scrape data on
@@ -65,7 +63,8 @@ Each step in my process is recorded and staged on a Trello board at:
 - One or two google slides suitable for a general audience that summarize your findings.
    -  Include a well-labelled visualization in your slides.
 # Instructions for Reproducing My Findings:
-- Start by cloning the github repository on your From your terminal command line, type git@github.com:GabbyBarajasBroussard/natural-language-processing-project.git
+- Start by cloning the github repository on your From your terminal command line, type:
+ git@github.com:GabbyBarajasBroussard/natural-language-processing-project.git
 
 Download the following files from https://github.com/GabbyBarajasBroussard/natural-language-processing-project to your working directory:
 
