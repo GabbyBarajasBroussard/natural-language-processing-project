@@ -173,7 +173,7 @@ def github_ac_urls():
     This function scrapes all of the Animal Crossing urls from
     the github search page and returns a list of urls.
     '''
-    # get the first 100 pages to allow for those that don't have readme or language
+    # get 100 pages to allow for those that don't have readme or language
     pages = range(1, 101)
     urls = []
     
@@ -198,4 +198,29 @@ def github_ac_urls():
     # flatten the urls list
     urls = [y for x in urls for y in x]
     return urls
-
+###########################################################################################################################################################################
+def make_repo_csv():
+    '''This function takes in the organization and repo name from the github_ac_urls, removes the first / from
+    the name, then scrapes github for the language, name of repo and readme. Then it writes to a csv for later use and returns a dataframe of
+    the above info.'''
+    repos = github_ac_urls()
+    repos = [repo[1:] for repo in repos]
+    df = wrangle.scrape_github_data(repos)
+    df = pd.DataFrame(df)
+    df.to_csv('animal_crossing.csv')
+    return df
+###########################################################################################################################################################################
+def find_readme_length():
+    """ 
+    This function starts with an empty list, then in each readme column finds the length
+    of the readme then appends the length to the empty list to build a new list called length.
+    The function then returns the length of each readme.
+    """
+    df= pd.read_csv('animal_crossing.csv')
+    df["readme_contents"] = df["readme_contents"].astype(str)
+    length = []
+    for w in df['readme_contents']:
+        text_len = len(w)
+        length.append(text_len)
+    
+    return length
