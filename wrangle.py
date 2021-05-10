@@ -132,7 +132,7 @@ def process_repo(repo: str) -> Dict[str, str]:
         "readme_contents": readme_contents,
     }
 
-###################################################################################################################################
+###########################################################################################################################################################################
 def generate_repo_list():
     """
     Sends requests to the github API based on the given parameters and returns a list of names of repositories that are not empty.
@@ -152,7 +152,7 @@ def generate_repo_list():
 
 
 
-########################################
+###########################################################################################################################################################################
 def scrape_github_data(repos) -> List[Dict[str, str]]:
     """
     Loop through all of the repos and process them. Returns the processed data.
@@ -166,43 +166,6 @@ if __name__ == "__main__":
     data = scrape_github_data()
     json.dump(data, open("data.json", "w"), indent=1)
 
-###################################################################################################################################
-
-
-
-
-
-###########################################################################################################################################################################
-def github_ac_urls():
-    '''
-    This function scrapes all of the Animal Crossing urls from
-    the github search page and returns a list of urls.
-    '''
-    # get the first 22 pages to allow for those that don't have readme or language
-    pages = range(1,101)
-    urls = []
-    
-    for p in pages:
-        
-        # format string of the base url for the maingithub search page we are using to update with page number
-        url = f'https://github.com/search?p={p}&q=animal+crossing&type=Repositories'
-
-        # Make request and soup object using helper
-        soup = make_soup(url)
-
-        # Create a list of the anchor elements that hold the urls on this search page
-        page_urls_list = soup.find_all('a', class_='v-align-middle')
-        # for each url in the find all list get just the 'href' link
-        page_urls = {link.get('href') for link in page_urls_list}
-        # make a list of these urls
-        page_urls = list(page_urls)
-        # append the list from the page to the full list to return
-        urls.append(page_urls)
-        time.sleep(5)
-        
-    # flatten the urls list
-    urls = [y for x in urls for y in x]
-    return urls
 ###########################################################################################################################################################################
 
 def github_ac_urls():
@@ -235,19 +198,4 @@ def github_ac_urls():
     # flatten the urls list
     urls = [y for x in urls for y in x]
     return urls
-
-
-def make_urls ():
-    # get url list
-    url_list = github_ac_urls()
-
-    # Set base_url that will be used in get request
-    base_url = "https://github.com"
-        
-    # List of full url needed to get readme info
-    readme_url_list = []
-    for url in url_list:
-        full_url = base_url + url
-        readme_url_list.append(full_url)
-    return readme_url_list
 
