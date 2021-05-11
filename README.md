@@ -13,8 +13,7 @@
 - The purpose of this project is to scape data from Github repository README files covering different Animal Crossing topics. The goal is to build a machine learning model that will predict what programming language the repository is based off of the given text in the README.
 
 ## Project Goals:
-- Deliver a notebook presentation of models used to isolate drivers of increased length of time spent in the hospital.
-- Use clustering methodologies to engineer new features and visualize factors that contribute to length of time spent in the hospital. 
+ 
 - All files referenced in this presentation are available in the github repository for this project: https://github.com/GabbyBarajasBroussard/natural-language-processing-project
 
 
