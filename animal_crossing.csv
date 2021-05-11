@@ -1,0 +1,1558 @@
+,repo,language,readme_contents
+0,TuckingFypos/turnip-price-tracker,Python,"# Turnip Price Tracker
+> A Discord bot for TheLeague4.0 that tracks members' Animal Crossing: New Horizons Turnip prices
+
+The chatbot lives persistently on a networked Raspberry Pi 3 B+, and takes in user-submitted Turnip prices on a day-to-day basis. These prices are compared user to user, and the top price can be called so any member can see the best place to visit if they'd like to sell their Turnips for profit.  
+
+The bot also has other miscellaneous Discord functionality, which can be triggered by users with the !command, and are all visible to you in the /cogs directory of this repo. 
+
+## Installation
+
+Required Dependences [Linux]:
+
+Python 3.6+
+```sh
+$ sudo apt-get install python3.6
+```
+
+Discord.py:
+```sh
+python3 -m pip install -U discord.py
+```
+
+## Usage example
+
+Submitting a Turnip Price:
+```sh
+!turnips <price>
+```
+
+Checking Turnip Prices:
+```sh
+!turnips
+```
+
+## Release History
+
+* July 24, 2020
+  * Implemented !Xur with the help of [@NotDisliked](https://twitter.com/NotDisliked), developer of [WhereTheFIsXur](https://www.wtfix.gg). 
+
+* May 11, 2020
+  * Implemented !rollNdN to roll a dice
+  * Implemented a formatted embed for the !turnips price return
+  * Implemented !quickpoll 
+
+* April 22, 2020
+  * Implemented Cogs
+  * Fixed the Clear function (for real this time)
+  * Fixed the Choose command
+
+* April 19, 2020
+  * Fixed the calculation for Sundays, buy days now seek out the lowest price
+  * Somehow broke the Clear function again. Must investigate...
+ 
+
+* April 13, 2020
+  * Fixed timekeeping to reflect the Noon price reset
+  * Fixed the Clear function thanks to some community help
+
+* April 9, 2020
+   * Added Issue Tracking to the repo
+   * Added Sponsorship links to the top-bar
+
+* April 8, 2020
+    * Work in progress
+    * Tracks basic Turnip Sale prices daily
+    * No Sunday support for buying Turnips
+
+## Meta
+
+James D. – [@TuckingFypos](https://twitter.com/tuckingfypos)
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y81LHJL)
+
+
+## Contributing
+
+1. Fork it (<https://github.com/tuckingfypos/turnip-price-tracker/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+"
+1,HxBreak/AnimalCrossingTools-Android,Kotlin,"# Animal Crossing Tools - Android
+
+## description
+
+This is a tool helper player mark collected item in game and listening muisc, application 's some code can be reuseable in other project like network interactive, I'm separating it to shared module.
+
+Project is using paging3, retrofit, hilt, okhttp, protobuf, navigation, Also this can help other people to know how to using morden android development skill.
+
+## Intertive Preview
+
+![](art/art1.gif)
+![](art/art2.gif)
+
+## requirement
+
+flutter - newest dev version
+
+## setup
+
+`cd acnh_module && flutter pub get && cd ..`
+
+`./gradlew assembleDebug`"
+2,stellaw1/fellow-crossing,C++,"<p align=""center""> <img src=""https://imgur.com/d4drRso.png"" align=""center"" alt=""Logo"" width=""486"" height=""313""></p>
+
+# Fellow Crossing
+An Animal Crossing inspired game, designed to replicate office environments and encourage socialization between fellows
+
+
+## Inspiration
+The Major League Hacking Fellowship has been great, don't get us wrong. However, something we miss in our remote summer experience are the casual coffee breaks and candid conversations with coworkers. So, we decided to create a virtual experience to encourage unstructured socializing between fellows in an enjoyable, Animal Crossing inspired video game.  
+
+
+## What it does
+Fellow Crossing is a video game that encourages socialization between coworkers. It includes a coffee room with voice calling features, a music room with synchronized background music, and a personal office space with customizable furniture. These features were developed with the goal of encouraging small talk and mingling amongst fellows during their break times. 
+
+
+## Tools used to build this project
+ - [Godot game engine](https://godotengine.org/download/windows)
+ - SQL database
+ - AWS server
+ - itch io
+ - Photoshop
+ - Adobe Illustrator
+ - Python 
+ - [Mumble](https://www.mumble.com/mumble-download.php)
+
+
+## Instructions to play game
+
+### Remote server
+To play the multiplayer version of the game, please install the [Mumble client](https://www.mumble.com/mumble-download.php) at the default location. Then, head to [here](https://stellaw1.itch.io/fellow-crossing) to download an executable version of our game. Please download `windowsApp.exe` and `windows.App.pck` for Windows or `macApp.dmg.zip`  for Mac. Launch the executable and have fun!
+
+
+### Local server [for debugging/ testing purposes]
+##### Server
+To start the server, open terminal and navigate to `fellow-crossing/godot-sqlite-1.7/Game/`. Then, run this command:
+
+```
+  /path/to/godot --path . --server
+```
+
+##### Client
+Ensure the `IP` constant in the file `Client/Chat/ChatBox.gd` is set to ""127.0.0.1"". Open the `project.godot` file in `fellow-crossing/godot-sqlite-1.7/Game/` using the Godot game engine editor and play the project.
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+"
+3,mutoo/critterpedia-plus,JavaScript,"# Critterpedia-plus
+
+An advanced critterpedia for Animal Crossing: New Horizons, helps you find new critters easily.
+
+## Screenshots
+
+The time traveling filters, allow you to inspect critters' availabilities now and then.
+
+![Filters](./screenshots/filters.jpg)
+
+Display the critters with game interface, helps you easily to finish your collection.
+
+![Insect Grid](./screenshots/insects.jpg)
+
+![Fish Grid](./screenshots/fish.jpg)
+
+More details than in game view.
+
+![Insect Detail](./screenshots/insect-detail.jpg)
+
+![Fish Detail](./screenshots/fish-detail.jpg)
+
+Shadow preview provides more intuitive idea what it looks like.
+
+![Fish Shadow](./screenshots/fish-shadow.jpg)
+
+Visit the live site for more fun here:
+https://mutoo.github.io/critterpedia-plus/
+
+## License
+
+MIT
+
+## Credits
+
+This project is based on [react-boilerplate v5.0](https://github.com/react-boilerplate/react-boilerplate/pull/2815).
+
+I also want to thank [ACNH API](http://acnhapi.com/), which provides a very easy way to access game data for this project.
+"
+4,seanpm2001/Mammal_Town,Python,
+5,Maxzilla60/AC-Lister,TypeScript,"# Animal Crossing ★ Villager Lister
+Easily search, view and assemble lists of your favorite Animal Crossing villagers!
+
+### 👉 [**Visit it here!**](https://ac-lister.netlify.app/) 👈
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd74c070-049b-43ef-b920-a28f989f7906/deploy-status)](https://app.netlify.com/sites/ac-lister/deploys)
+
+## ⭐ Features
+- 🔎 Easily search through all current villagers *(by name, species, and personality)*
+- 📜 Multiple custom lists
+- 👁 See species, personality, favorite coffee and birthday at a glance
+- 💾 Browser remembers your lists even after a page refresh *(but not after hard refresh/clearing cache)*
+- 📁 Export and upload your lists from files
+- 📄 Save your lists as a simple text file
+
+## 🗳 Feedback?
+Please go **[here](https://github.com/Maxzilla60/AC-Lister/issues)** and let me know!
+
+## 🚧 Work In Progress Board
+
+If you're curious about upcoming/planned features and what's currently being worked on, check out the **[Trello board](https://trello.com/b/DD4k8ncM/ac-lister-20)**.
+
+## 🎯 Version 2.0 Goals
+
+ - [x] Build the website with a simple web bundler, **[Parcel](https://parceljs.org)**.
+ - [x] Refactor the JavaScript code to use a Model-View-Presenter architecture with **[TypeScript](https://www.typescriptlang.org)** and **[RxJS](https://rxjs-dev.firebaseapp.com)**.
+ - [x] Implement integration tests with **[Cypress](https://www.cypress.io)**.
+ - [x] Overhaul the CSS & HTML to make it mobile-friendly with **[CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)**.
+ - [x] Host the website on **[Netlify](https://www.netlify.com/)**.
+ - [ ] Convert the website into a **[PWA](https://developers.google.com/web/progressive-web-apps/)**.
+
+## 🌷 Credits
+- [Purple-Pixel](https://purple-pixel.tumblr.com/) for the wonderful profile art.
+- [Here](http://kelseycrossing.com/post/149344517906/animal-crossing-pixel-masterpost) and [here](http://reguluscrossing.tumblr.com/post/153233705592/tried-to-edit-some-of-rehoeass-pixels-to-make) for the small villager icons.
+- Special thanks to Lucy for helping me out with the villager information and images (`villagers.js`).
+- [Font Awesome](http://fontawesome.io/) icons.
+- [Real Favicon Generator](http://realfavicongenerator.net/).
+- [Confetti](https://github.com/catdad/canvas-confetti) for the fun confetti!
+- [Lozad](https://apoorv.pro/lozad.js/) for lazy loading of images.
+- [HammerJS](https://hammerjs.github.io) for mobile gestures.
+"
+6,jamchamb/ac-nesrom-save-generator,Python,"# ac-nesrom-save-generator
+
+## Setup
+
+Use `pip` to install dependencies:
+
+```
+$ pip install -r requirements.txt
+```
+
+Then install the script with:
+
+```
+$ python setup.py install
+```
+
+You may want to use a [virtual environment](https://virtualenv.pypa.io/en/stable/) for this.
+
+## ROM files
+
+This tool can generate Animal Crossing save files that contain playable NES ROMs.
+To create a new file, provide the name of the game, the path to the ROM image, and the path
+to the output GCI file.
+
+    $ ac-nesrom-gen ""Mega Man"" ""Mega Man (USA).szs"" mega_man_nes.gci
+    Need 12 blocks to contain ROM GCI
+    Checksum: 0x00973e8e
+    Check byte: 0x72
+
+The ROM image can optionally be compressed in ""Yaz0"" (""szs"") format using a tool
+like wszstools.
+
+Use a memory card manager to import the GCI file to a memory card, and then use
+the ""NES Console"" item to play the ROM.
+
+If you're playing on Dolphin, disable anti-aliasing when playing NES games to
+get a better picture.
+
+## Patcher files
+
+This tool can also be used to generate NES ROM files that contain patch tags. These
+tags can be used to patch code and data in memory.
+
+Example usage of the patch options:
+
+    $ ac-nesrom-gen ""Zuru2 Patch"" /dev/null zuru_mode_2.gci -p 80206F9c 0000007D
+
+Each `-p`/`--patch` option inserts a small ROM tag patch (251 bytes or less) within
+the address range `0x80000000` - `0x807FFFFF`.
+
+Larger patches, including code patches, can be inserted into the ROM data section.
+Use the `--loader` option to insert a patch loader that automatically loads big patches
+from the ROM data section, and supply the path to a patch file where the ROM file path
+would normally go.
+
+    $ ac-nesrom-gen --loader ""printf"" printf_c.patch printf_c.gci
+
+If a patch only needs to run once upon loading, the `--autoheader` option
+can be used to generate a header for it automatically. It takes the load address
+of the patch as an argument.
+
+    $ ac-nesrom-gen --loader --autoheader 80002000 ""Test"" test.patch test.gci
+
+See the [ac-patch-loader](https://github.com/jamchamb/ac-patch-loader) repo
+for patch format and calling conventions.
+
+## Big patch generator
+
+YAML files describing a series of big patches and settings can be used to generate
+the big patch section content automatically.
+
+This example includes two patches. It uses a hex string to overwrite one instruction
+at `0x80404E24`, and then loads a larger patch from the file `debug_printf_c.patch`
+to be inserted at `0x80002000`.
+
+```yaml
+settings:
+    jut_console: false
+
+patches:
+  - target: 0x80404E24
+    bytes: '4BBFD1DD'
+
+  - target: 0x80002000
+    file: debug_printf_c.patch
+```
+
+This example inserts a patch that will be called immediately after
+it's loaded to `0x80002000`. It also enables the in-game debug console
+without requiring zuru mode to be enabled.
+
+```yaml
+settings:
+  jut_console: true
+
+patches:
+  - target: 0x80002000
+    file: hello_osreport_c.patch
+    flags:
+      jump: true
+```
+"
+7,HarrisonXi/AnimalCrossingFlower,Python,"# 《动物森友会》蓝玫瑰花卉杂交无歧义优化方案
+
+### 引用资料
+
+Google文档：
+
+[花卉杂交指南：Animal Crossing Flower Genetics Guide](https://docs.google.com/document/d/1ARIQCUc5YVEd01D7jtJT9EEJF45m07NXhAm4fOpNvCs)
+
+[花卉基因表现表格：ACNH/ACNL Flower Flags](https://docs.google.com/spreadsheets/d/11pRCX8G0xGizSYWgVhoUSu7pE-MV7AOprBcgSY1whB4)
+
+微博大佬[阿丘不严肃](https://www.weibo.com/u/1949050703)翻译的译文：
+
+[全花朵基因型及杂交原理参考（编译）](https://www.weibo.com/ttarticle/p/show?id=2309404493225317499148)
+
+上一篇文章：
+
+[《动物森友会》蓝玫瑰花卉杂交无歧义方案](https://github.com/HarrisonXi/AnimalCrossingFlower/blob/master/readme_old.md)
+
+### 前言
+
+前一篇文章给大家介绍了无歧义方案，但是因为概率太低没有什么卵用，所以今天要做的就是优化这个方案。关于什么是无歧义方案，请看上一篇！
+
+### 另一种无歧义的可能性
+
+前一篇文章我觉得同一种花色出现两个基因型，就会难以判断歧义。但是现在我觉得不完全是这样，类似于上一篇文章里提到的例子中，两种紫色就是可以区分的：
+
+![old.png](https://github.com/HarrisonXi/AnimalCrossingFlower/raw/master/old.png)
+
+所以我改良了算法，如果杂交结果中同颜色的花出现了**两种**基因型，那么我会把两种花都和三色原始种子花杂交一下，用以判断这个基因型是不是可消歧义的。用上图中的例子来说，rryywwss和黄色原始种子花杂交只能出白色，而rrYywwss和黄色原始种子花杂交是能额外出现黄色的。一旦能出黄色，它就一定是rrYywwss基因型，所以这里我就会认定rrYywwss也是无歧义的。（这个算法写起来有点烦，我承认第一版是因为我懒所以没好好实现这个。）
+
+### 剔除低概率太并增加轮数
+
+紧接着我尝试了剔除低概率的结果并增加的杂交的轮数，因为这样做可以对基因进行提纯。RrYyWwss如果能渐渐变成RrYywwss之类的，那肯定是极好的。
+
+算法优化到这里之后，差不多4至6轮杂交（不含消歧义步骤）后，就能得到一些比较好的基因型用来培育蓝玫瑰了（完整结果：[output2.txt](https://github.com/HarrisonXi/AnimalCrossingFlower/blob/master/output2.txt)）：
+
+```
+RRYywwss(黑) + RRYywwss(黑) = RRYYwwss(蓝) 25.0%
+RRYywwss(黑) + RrYYwwss(红) = RRYYwwss(蓝) 25.0%
+RRYywwss(黑) + RRYYwwSs(红) = RRYYwwss(蓝) 25.0%
+RRYywwss(黑) + RRYYWwss(橙) = RRYYwwss(蓝) 25.0%
+RrYYwwss(红) + RrYYwwss(红) = RRYYwwss(蓝) 25.0%
+RrYYwwss(红) + RRYYwwSs(红) = RRYYwwss(蓝) 25.0%
+RrYYwwss(红) + RRYYWwss(橙) = RRYYwwss(蓝) 25.0%
+RRYYwwSs(红) + RRYYwwSs(红) = RRYYwwss(蓝) 25.0%
+RRYYwwSs(红) + RRYYWwss(橙) = RRYYwwss(蓝) 25.0%
+RRYYWwss(橙) + RRYYWwss(橙) = RRYYwwss(蓝) 25.0%
+```
+
+### 计算种子得分
+
+但是看一遍完整结果就会发现茫茫花海，要找个最优的杂交路线不容易。有些结果会使得基因纯度越来越低，类似RrYyWwSs这种动不动就能杂交出十几种基因型，所以也应该从流程里直接剔除掉它们。为了进一步优化，我给种子新增了评分系统。比如红色我们期望的基因型是RR，那么RR计3分，Rr计2分，rr计0分（关于为什么这么计分就不展开说了）。这样我们对四组基因做完评分，三色的原始种子还有蓝玫瑰的基因型得分就是：
+
+```
+rryyWwss(白) = 5分
+rrYYWWss(黄) = 6分
+RRyyWWSs(红) = 5分
+RRYYwwss(蓝) = 12分
+```
+
+每次杂交完得到新的结果，我们不仅要选择无歧义的，还要期望得分更高的结果，来保证基因型越来越趋近于蓝玫瑰。
+
+### 结论
+
+再次改进后的算法（源代码：[flower.py](https://github.com/HarrisonXi/AnimalCrossingFlower/blob/master/flower.py)），运行一下就可以得到结果：[output3.txt](https://github.com/HarrisonXi/AnimalCrossingFlower/blob/master/output3.txt)。可以看到已经很简短了，从这里面剔除一些没用上的路线得到下面的结果，就可以按照这个路线尝试进行培育啦。
+
+```
+**** 第1轮 ****
+rryyWwss(白) + rryyWwss(白) = rryywwss(紫) 25.0%(6)
+rryyWwss(白) + rrYYWWss(黄) = rrYyWwss(白) 50.0%(7)
+rryyWwss(白) + RRyyWWSs(红) = RryyWwss(红) 25.0% 歧(7)
+rrYYWWss(黄) + RRyyWWSs(红) = RrYyWWss(橙) 50.0%(7)
+RRyyWWSs(红) + RRyyWWSs(红) = RRyyWWss(黑) 25.0%(6)
+**** 第2轮 ****
+rryyWwss(白) + rrYyWwss(白) = rrYywwss(紫) 12.5% 歧(8)
+RRyyWWSs(红) + RryyWwss(红) = RRyyWwss(黑) 12.5% 歧(8)
+rryywwss(紫) + rrYyWwss(白) = rrYywwss(紫) 25.0% 歧(8)
+rrYyWwss(白) + rrYyWwss(白) = rrYywwss(紫) 12.5% 歧(8)
+RryyWwss(红) + RRyyWWss(黑) = RRyyWwss(黑) 25.0% 歧(8)
+**** 第3轮 ****
+rrYYWWss(黄) + rrYywwss(紫) = rrYYWwss(黄) 50.0%(8)
+rrYyWwss(白) + rrYywwss(紫) = rrYYWwss(黄) 12.5%(8)
+RrYyWWss(橙) + rrYywwss(紫) = rrYYWwss(黄) 12.5%(8)
+RrYyWWss(橙) + rrYywwss(紫) = RrYYWwss(橙) 12.5%(10)
+rrYywwss(紫) + rrYywwss(紫) = rrYYwwss(白) 25.0%(9)
+**** 第4轮 ****
+RRyyWwss(黑) + RrYYWwss(橙) = RRYywwss(黑) 12.5%(11)
+rrYYWwss(黄) + RrYYWwss(橙) = RrYYwwss(红) 12.5%(11)
+RrYYWwss(橙) + RrYYWwss(橙) = RrYYwwss(红) 12.5%(11)
+RrYYWwss(橙) + rrYYwwss(白) = RrYYwwss(红) 25.0%(11)
+**** 结果 ****
+RRYywwss(黑) + RRYywwss(黑) = RRYYwwss(蓝) 25.0%
+RRYywwss(黑) + RrYYwwss(红) = RRYYwwss(蓝) 25.0%
+RrYYwwss(红) + RrYYwwss(红) = RRYYwwss(蓝) 25.0%
+```
+
+注：末尾含有“歧”字的就是需要二次杂交验证下消歧义。
+
+整理下目前算出来较优的完整杂交步骤：
+
+```
+1. rryyWwss(白种子) + rrYYWWss(黄种子) = rrYyWwss(白1) 50.0%
+2. 第一步里的白色花和白种子花杂交，可能会得出两种紫色：
+   rryyWwss(白种子) + rrYyWwss(白1) = rryywwss(紫2A) 12.5%
+   rryyWwss(白种子) + rrYyWwss(白1) = rrYywwss(紫2B) 12.5%
+3. 将培育出来的紫色都和黄种子花杂交，可能得出以下结果：
+   rrYYWWss(黄种子) + rryywwss(紫2A) = rrYyWwss(白1) 100.0%
+   rrYYWWss(黄种子) + rrYywwss(紫2B) = rrYyWwss(白1) 50.0%
+   rrYYWWss(黄种子) + rrYywwss(紫2B) = rrYYWwss(黄3) 50.0%
+   注意这里产生的白色都是和第一步的白色是一样的基因型，可以重复利用。
+   一旦产出了黄色花，那么这个紫色花就是rrYywwss(紫2B)基因型，这个黄色花后面还会用到，不要丢。
+4. RRyyWWSs(红种子) + rrYYWWss(黄种子) = RrYyWWss(橙4) 50.0%
+5. RrYyWWss(橙4) + rrYywwss(紫2B) = rrYYWwss(黄3) 12.5%
+   RrYyWWss(橙4) + rrYywwss(紫2B) = RrYYWwss(橙5) 12.5%
+   这两个都是无歧义的结果。
+6-1. 这里得到的多个RrYYWwss(橙5)相互杂交，已经有6.2%的概率出蓝色了。没有出蓝色的话，还有挺大概率出现阿丘文章里提到的二代红：
+   RrYYWwss(橙5) + RrYYWwss(橙5) = RrYYwwss(二代红) 12.5%
+   RrYYWwss(橙5) + RrYYWwss(橙5) = RRYYwwss(蓝) 6.2%
+   上面的结果都是无歧义的。不过不是很推荐这个方案，因为后面的方案可以持续优化概率。
+6-2. 把RrYYWwss(橙5)和之前的rrYYWwss(黄3)进行杂交：
+   RrYYWwss(橙5) + rrYYWwss(黄3) = rrYYwwss(白6) 12.5%
+   RrYYWwss(橙5) + rrYYWwss(黄3) = RrYYwwss(二代红) 12.5%
+   上面的结果都是无歧义的。这个rrYYwwss(白6)如果培育出来，也是有用的。
+6-3. 如果得到了rrYYwwss(白6)，优先拿它和RrYYWwss(橙5)杂交：
+   RrYYWwss(橙5) + rrYYwwss(白6) = rrYYWwss(黄3) 25.0%
+   RrYYWwss(橙5) + rrYYwwss(白6) = rrYYwwss(白6) 25.0%
+   RrYYWwss(橙5) + rrYYwwss(白6) = RrYYWwss(橙5) 25.0%
+   RrYYWwss(橙5) + rrYYwwss(白6) = RrYYwwss(二代红) 25.0%
+   相信你也发现了，出现的4种结果都是有用的。
+7. RrYYwwss(二代红) + RrYYwwss(二代红) = RRYYwwss(蓝) 25.0%
+   RrYYwwss(二代红) + RrYYwwss(二代红) = rrYYwwss(白6) 25.0%
+   RrYYwwss(二代红) + RrYYwwss(二代红) = RrYYwwss(二代红) 50.0%
+8. 为什么还有步骤8？哈哈哈，不要奇怪，完善的培育方案可不会教你只培育一朵蓝玫瑰。把蓝玫瑰和二代红种一起，可以提高培育更多蓝玫瑰的效率：
+   RrYYwwss(二代红) + RRYYwwss(蓝) = RrYYwwss(二代红) 50.0%
+   RrYYwwss(二代红) + RRYYwwss(蓝) = RRYYwwss(蓝) 50.0%
+```
+
+### 关于第一篇文章中的二代红
+
+改进了新算法后，发现两步就能培育出第一篇文章中的二代红RrYyWwss，不想折腾那么多复杂步骤，可以用这个基因型搞花海战术。当然我只是瞎扯的，因为上一篇就说了概率太低导致几乎没有dio用。
+
+![red.png](https://github.com/HarrisonXi/AnimalCrossingFlower/raw/master/red.png)"
+8,NWPlayer123/AnimalCrossing,C,"# Animal Crossing for Nintendo GameCube
+
+This repository is basically just a save-my-files-in-case-my-hard-drive-dies and to show people my suffering.
+
+Expect more Sometime In The Future™.
+"
+9,dragos240/Pocket-NLSE,C,"# Pocket-NLSE
+A portable save editor for Animal Crossing: New Leaf on the Nintendo 3DS
+
+##Back up your shit
+Make sure you make backups of your save file in case you do something stupid or Pocket-NLSE fucks up (in which case please report that bug in the issues section).
+
+##Suggestions
+Suggestions are more than welcome. Please use the issues section for this.
+"
+10,SeunghoShin93/Animal-Crossing-Finder-Crawler-,Python,"# Animal Crossing Finder (Crawler)
+
+## 프로젝트 소개
+
+닌텐도 스위치 동물의 숲 에디션을 파는 쇼핑몰을 크롤링하여 재고 여부를 알려줍니다.
+
+
+
+## 개발 배경
+
+## 닌텐도 스위치 동물의 숲 에디션이 갖고 싶었다. 
+
+그러나 수요에 비해 터무니 부족한 공급에, 정해진 시간에 물량을 푸는 오픈 마켓은 대기자가 너무 많다.
+
+게릴라 성으로 갑자기 물건을 푸는 사이트에 기대해야하는 상황이지만,
+
+하루종일 새로고침만 누르고 있을 순 없는 노릇이기에 직접 사용하기 위해 개발했다.
+
+
+
+## Getting Started
+
+- pip upgrade
+
+- pip install -r requirements.txt
+
+- 사용하는 chrome 버전에 맞춰 chromedriver 다운로드 - https://chromedriver.chromium.org/downloads
+
+- `ds_finder.py`  의  `chrome_path` 를 본인 컴퓨터의 `chromedriver.exe` 경로 수정 
+  (default: `""C:/Download/chromedriver_win32/chromedriver.exe""`)
+
+- `python ds_finder.py`  로 실행
+
+  
+
+## 기술 스택
+
+- Selenium.webdriver
+- pygame (알림음)
+
+
+
+## 동작 원리
+
+- `python ds_finder.py` 로 실행
+
+- 사이트를 크롬으로 render 후 재고 품절 여부를 결정짓는 webelement 요소 캐치
+  - pygame으로 음악을 재생하여 사용자에게 구매 가능 여부를 알린다. (default music: 사이렌)
+  - 재고 발생 시 : 터미널에 사이트 print
+  - 해당 도메인의 크롬 창이 켜짐
+  
+- `ctrl+c` 명령어로 끄지 않는 이상 상기 과정 반복합니다.
+
+- 렌더링 에러 시 경적음 재생 (티몬에서 자주 발생)
+
+  
+
+## 지원하는 사이트 목록 
+
+
+
+- `소프라노`
+
+- `조이트론 스토어 (네이버 스마트 스토어)`
+
+- `엔엔마켓`
+
+- `tmon (1번 옵션, 2번 옵션)`
+- 간헐적으로 xpath가 바뀌어서 time exception error 가 발생한다. body / 첫번째 div 인덱스가 바뀜 
+  
+
+
+
+## Tips
+
+- 재고 풀리는 시간이 랜덤입니다. 오전 8시부터 오후 6시~7시까지 켜두시길 권장합니다.
+
+- `test.py` 로 커스터마이징한 코드를 시험해보세요!
+
+- HOW TO CUSTOMIZE
+
+  - `browser_form(domain)`에 판매 페이지 도메인 등록
+
+    or
+
+  - `browser_form(domain)`에 판매 목록 페이지 도메인 등록
+
+  - 품절 여부를 확인 할 수 있는 webElement (품절 로고나 구매 가능 여부 등을 추천합니다.) 변수화 하여 구매 가능시  `go('text', True)` 실행
+
+
+
+## Updates
+
+- cjmall 삭제 (재고 전무)
+
+
+
+
+
+
+
+
+
+## 2020-05-18 0928 조이트론 알림으로 인질셋 구매 완료 ! :joy: "
+11,Chriskeehk/Animal-Crossing,HTML,
+12,helmasaur/ac-keijiban,JavaScript,"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![](https://img.shields.io/npm/v/ac-keijiban.svg)](https://www.npmjs.com/package/ac-keijiban)
+
+# AC-Keijiban
+
+Sends a random message from the *Animal Crossing: Wild World* video game on Nintend DS created by Katsuya Eguchi and published in 2005.
+
+The quotes come from three types of board message:
+- ""Message of the Week""
+- ""Poetry""
+- ""Talking to Myself""
+
+## Installation
+
+You have to add this module to your npm modules folder.
+
+```bash
+$ npm install ac-keijiban
+```
+
+## Example
+
+### Importing the module
+
+```js
+// Require with a language (format xx)
+const acKeijiban = require('ac-keijiban')('en');
+// Require with a language (format xx-YY) sets 'en'(format xx)
+const acKeijiban = require('ac-keijiban')('en-US')
+// Require without an argument sets 'en'
+const acKeijiban = require('ac-keijiban')();
+```
+
+### Displaying a random ""Message of the Week""
+
+```js
+console.log('*Message of the Week*');
+console.log(acKeijiban.messageOfTheWeek.random());
+```
+
+### Displaying a random ""Poetry""
+
+```js
+console.log('-Poetry-');
+console.log(acKeijiban.poetry.random());
+```
+
+### Displaying a random ""Talking to Myself""
+
+```js
+console.log('-Talking to Myself-');
+console.log(acKeijiban.talkingToMyself.random());
+```
+
+## Translation
+
+For the moment, the only language avaible is English. The French messages are being collected directly from *Animal Crossing: Wild World* on Nintendo DS.
+
+Obviously, you are free to participate to the translation in French or in any other language.
+
+### Avaible languages
+
+#### English 
+- ""Message of the Week"": 85 *(complete)*
+- ""Poetry"": 2 *(complete)*
+- ""Talking to Myself"": 74 *(complete)*
+#### French
+- ""Message de la semaine"": 18
+- ""Poème"": 0
+- ""Réflexions"": 13
+
+## Thanks
+
+Thanks to:
+- The [*Programming Discussion*](https://progdisc.club) and the [*Coding Den*](https://discordapp.com/invite/code) Discord servers;
+- [r/AnimalCrossing](https://www.reddit.com/r/AnimalCrossing) on Reddit;
+- The [*Bulletin Board*](https://animalcrossing.fandom.com/wiki/Bulletin_Board) article on the *Animal Crossing* FANDOM wiki;
+- Nintendo and Katsuya Eguchi for creating *Animal Crossing*;
+- [BelleChoucroute](https://twitter.com/BelleChoucroute) for the French translation.
+- [Zeste de Savoir](https://zestedesavoir.com) especially (ache and A-312) for making my code better.
+## Licenses
+
+- My source code is published under [MIT License](https://github.com/Helmasaur/ac-keijiban/blob/master/LICENSE).
+- All the quotes from *Animal Crossing: Wild World* is the property of Nintendo."
+13,artpark/AnimalCrossingUnity,C#,# AnimalCrossingUnity
+14,dylannelson/AnimalCrossingDashboard,Jupyter Notebook,"# AnimalCrossingDashboard
+## Dynamic Dashboard for Animal Crossing New Horizons
+[Updates and Progress](https://github.com/dylannelson/AnimalCrossingDashboard/blob/main/Drafting/README.md)  
+  
+[>>> Working Site <<<](https://dylannelson.github.io/AnimalCrossingDashboard/)
+    
+![dec28th progress](Drafting/Sketches/12-28.PNG)
+### Uses:
+- Tracking the fish you've caught so far, saved locally
+- See what fish you have left to collect
+- See when and where to catch any missing fish
+
+Updated with data visuals live, based off of your collection.
+
+### Achieved Goals:
+1. Make a grid for all fish and logos to represent them
+2. Connect the data of each fish to their corresponding grid box
+3. Allow the fish to be toggled on and off and save them locally
+4. Make 4 data viz to help the users collect their remaining fish 
+more efficiently
+5. Host the site for others to use  
+6. Scale with size: Make the bottom two graphs able to handle more than 20 data points
+7. Basic aesthetics
+8. Info/Help page
+  
+### Current Goals
+9. More relevant units for first graph  
+10. Better CSS/aesthetics
+
+  
+#### Stretch Goals:
+Goals we would like to achieve as a bonus from our original intentions
+1. Integrate the bug catalog, the second most sought afer creature
+    - Requires doing all of the work above, but for a new dataset
+2. Add artworks, the third most important
+3. Add critters as well
+4. Add additional info for each creature, like the informational quotes provided ingame
+<br><br><br>
+<ins>Credits</ins>
+- [sungyeonu](https://github.com/sungyeonu/animal-crossing-scraper) for 
+their web scraper and data"
+15,chuangmaster/AnimalCrossingLineBotUpdateDoc,,"# AnimalCrossingLineBotUpdateDoc
+此為「集合啦！動物森友會」於Line上的機器人「Line狸端機」的更新紀錄與反饋回應紀錄
+
+---
+# 問卷反饋
+所有填表單回饋於我的問題，我將於此地方進行回覆，希望有答覆到你們的問題:) <br>
+👉 https://lihi1.com/nY9Ah
+
+---
+## 機器人功能與指令
+1. 找DIY配方 輸入做[道具關鍵字] 例如: @做櫻花、@做櫻花傘
+> 此功能進行模糊比對，如果搜尋櫻花可能會取得更多與櫻花相關的配方<br>
+> 特別注意當如果輸入配方的內容包含精準內容時，僅會顯示精準項目，例如搜尋「鏟子」時，會直接帶出鏟子的配方，不會出現「金色鏟子」
+> 如果有要查看其他鏟子資訊，建議輸入「@做**鏟**」的關鍵字
+
+2. 找島民與特殊島民資訊 輸入誰是[島民名稱]或[島民名稱]是誰 例如: 誰是阿保、傑克是誰、誰是狸克
+> 此功能支援中(繁體)、英文、日本搜尋
+
+3. 查種族分類 「@種族」例如: @種族
+> @符號目前設計是半形
+
+4. 找島民種族 「@種族 種族名稱」 例如: @種族 貓
+> 目前僅支援行動裝置上的Line APP <br>
+> 使用**精準比對**
+
+5. 找島民個性分類 輸入「@個性」例如: @個性
+> 目前僅支援行動裝置上的Line APP <br>
+> 使用**精準比對**
+
+6. 找島民個性 輸入「@個性 個性分類」例如: @個性 自戀、@個性 悠閒
+> 目前僅支援行動裝置上的Line APP <br>
+> 使用**精準比對**
+
+7. 找今天誰生日 輸入「@生日」例如: @生日
+> 僅顯示今日生日的島民
+
+8. 找島民生日 輸入「@生日 Month/Day」例如: @生日 04/22、@生日 12/31
+> 輸入錯誤將不回應
+
+9. 查詢售價 輸入「@賣魚名稱/昆蟲名稱/植物水果名稱」(目前僅支援魚、昆蟲、水果植物) 例如: @賣鱒魚、@賣狼蛛、@賣櫻桃
+> 目前僅支援魚、昆蟲<br>
+> 使用**精準比對**
+
+10. 查詢蟲魚捕捉情報「@魚 [魚名稱]」、「@蟲 [蟲名稱]」 例如: @魚 鯨鯊、@蟲 狼蛛
+> 目前僅支援魚、昆蟲<br>
+> 使用**精準比對**比對單一項目
+> 使用**模糊比對**比對多個選單
+> 這個分類是官方的分類，因此青蛙、鯊魚、鯨魚等，雖然不是魚，但是被分類到@魚
+
+11. 查詢某月蟲魚清單「@魚 (月份)月」、「@蟲 (月份)月」 例如: @魚 7月, @蟲 7月
+> 目前功能顯示較為簡陋，請見諒
+
+12. 查詢化石 輸入「@植物 [植物名稱]」 例如: @植物 橘色波斯菊
+> 使用**模糊比對**
+
+13. 查詢化石 輸入「@化石 [化石名稱]」 例如: @化石 暴龍
+> 使用**模糊比對**
+
+14. 查詢藝術品 輸入「@藝術品 [藝術品分類、名稱、真實名稱]」例如: @藝術品 名畫、@藝術品 雕塑、@藝術品 名貴的名畫、@藝術品 星空
+> 使用**模糊比對**
+> 特別加入畫作真偽，也加入真實畫作的名字與作者，都可以透過關鍵字來搜尋到
+
+15. 查詢家具、服飾 輸入「@找 [家具名稱/服飾]」 
+> 例如: @找 木吉他、@找 螞蟻農場
+> 例如: @找 蘋果服、@找 牛仔帽、@找 針織罩衫&襯衫
+> 使用**模糊比對**，但遇到多個相似項目必須精準比對<br>
+> Icon圖示分別為：可以改造、可以浬點購買、可以DIY、可以網購<br>
+> 支援 家具、裝飾品、壁掛物、地毯、地版、壁紙、柵欄分類、手持物品、上身、下身、套裝、頭戴、飾品、鞋子、背包、雨傘
+> @找為新增的指令，原本的@家具、@服飾依舊可以用，但建議使用@找(比較精簡)
+
+16. 找尋系列「#分類名稱」 例如：例如：「#春天」、「#星座」、「#竹子」、「#鑄鐵」
+
+17. 方便工具 輸入「@tools」
+
+18. 在聊天室與群組移除「Line狸端機」 輸入「@bye」
+---
+
+## 贊助我
+贊助方案👉 https://lihi1.com/2OMs8
+贊助必填否則無法享有福利👉 https://lihi1.com/9zSXO
+
+## 贊助名單
+* 2020-06-18	木土土	NTD 300
+* 2020-06-18	小*(贊助回報單未填；不顯示全名確保福利)	NTD 300
+* 2020-06-17	杜宗憲	NTD 150
+* 2020-06-17	吱吱	NTD 500
+* 2020-06-09	蜜蜜	NTD 200
+* 2020-06-08	誠意亭	NTD 600
+* 2020-06-05	林孟璇 Op ฅ՞•ﻌ•՞ฅ	NTD 100
+
+---
+# 更新版本
+20200619
+* [Fiexed] v2020061901 調整@做指令，修正竹林牆圖片
+
+20200618
+* [Release] v2020061801 加入道具顏色風格、島民喜愛風格與顏色
+* [Fiexed] v2020061801 未出現版本島民修正
+
+20200615
+* [Release] v2020061501 增加島民內裝、Amiibo編號
+* [Release] v2020061501 合併@找、@服飾的指令
+
+20200614
+* [Fiexed] v2020061401 修正糞金龜名稱
+
+20200610
+* [Fiexed] v2020061001 iPhone島民顯示錯誤修正
+
+20200609
+* [Fiexed] v2020060901 修正原魚名「黑魚」改為「鱧魚」(中文翻譯問題)
+
+20200608
+* [Fiexed] v2020060801 因調整資料導致bug模糊比對，顯示英文問題修正
+
+20200605
+* [Release] v2020060501 手持物品搜尋完成，允許使用「@找」搜尋手持物品；釋出找分類功能「#分類」
+
+20200602
+* [Fiexed] v2020060201 修正竹節蟲錯誤時間
+
+20200601
+* [Release] v2020052601 @種族、@個性搜尋結果採用Liff視窗
+
+20200526
+* [Fiexed] v2020052601 修正家具椰子壁掛盆栽名稱
+
+20200525
+* [Fiexed] v2020052501 修正家具Ninetendo Switch資料錯誤；修正NPC莫德里、莫里資料
+
+20200521
+* [Fixed] v2020052101 修正鑄鐵木DIY桌材料錯誤
+
+20200520
+* [Fixed] v2020052001「@蟲」、「@魚」指令時段顯示錯誤修正；「@找」指令因更新導致無法顯示柵欄、地毯、地板、牆壁修正
+
+20200519
+* [Released] v2020051901 「@找」指令樣式名稱翻譯完成，同時調整商店顯示文案
+> 尚有本體尚未完成翻譯
+
+20200518
+* [Released] v2020051801 新增「@找」指令內容，加入改造本體、樣式、數量與DIY反查
+> 近期會進行翻譯
+
+20200515
+* [Released] v2020051501 調整@魚[月份]與@蟲[月份]指令
+> 改採用網頁顯示
+
+20200512
+* [Fixed] v2020051202 資料修正「DIY:高架花籃、島民:柴姐」指令
+* [Released] v2020051201 新增島民房子與贈與服裝風格顏色偏好
+> 送對應的顏色服飾有助於增加好感度
+
+20200511
+* [Released] v2020051102 新增查詢「@找 xxx」指令(原@家具指令)
+* [Released] v2020051101 新增查詢「@服飾 xxx」指令
+
+20200510
+* [Fixed] v2020051003 修正Bug(DIY:改造icon顯示)
+* [Fixed] v2020051002 修正Bug(@種族 綿羊2 沒反應、@種族 小熊 3沒反應、個性成熟及悠閒男女、家具:液晶螢幕無法顯示)
+* [Released] v2020051002 新增家具指令資料(包含柵欄、地板、地毯、壁紙)
+* [Fixed] v2020051001 家具指令無反應bug
+
+20200509
+* [Released] v2020050901 新增家具指令資料(包含柵欄、地板、地毯、壁紙)
+* [Fixed] v2020050901 修正資料(島民:儒林口頭禪)
+
+20200508
+* [Fixed] v2020050802 修正資料(DIY:鑄鐵花園長椅)
+* [Fixed] v2020050801 調整因為更新樣板產生的bug、修正資料(島民:章丸丸口頭禪)
+* [Released] v2020050801 更新島民樣板，新增項目(偏好衣服的顏色與風格)，*注意:此並非島民喜顏色，而是衣服的偏好顏色與風格*
+
+20200507
+* [Fixed] v2020050702 修正(DIY:綠色草裙、花園長椅，島民:肉肉、余板)
+* [Released] v2020050701 新增特殊島民(指令範例:「誰是狸克」)
+
+20200506
+* [Released] v2020050603 新增壁掛資料(指令範例:「@家具 壁掛式蠟燭」
+* [Fixed] v2020050603 修正資料(DIY:星星側背包)
+* [Fixed] v2020050602 修正資料(蟲:竹節蟲、島民:史培亞)、調整UI
+* [Released] v2020050601 家具指令新增項目(擺飾類)
+
+20200505
+* [Fixed] v2020050501 資料修正(DIY:手押式汲水器、星星掛掛旗)
+
+20200504
+* [Released] v2020050401 新增雜物販售(例如:@賣金礦石、@賣沙錢)
+* [Fixed] v2020050401 資料修正(島民性別遺漏:花卷)
+
+20200503
+* [Fixed] v2020050302 資料修正(家具來源未翻譯完成導致bug未顯示)
+* [Fixed] v2020050301 資料修正(DIY:竹製燭台、深色竹地毯、繽紛三色堇花圈)
+
+20200502
+* [Fixed] v2020050204 新增資料(植物:椰子)
+* [Fixed] v2020050203 資料修正(DIY:石桌)
+* [Fixed] v2020050202 UX調整(昆蟲、魚查詢)
+* [Released] v2020050201 新增家具查詢
+
+20200501
+* [Fixed] v2020050101 資料修正(島民:番茄醬的名言、DIY:夏蜜柑服)
+
+20200430
+* [Released] v2020043003 新增魚與昆蟲月份彙整清單、新增賣植物清單
+* [Fixed] v2020043002 資料植物指令錯誤「@植物 xx」、Bug修正
+* [Fixed] v2020043001 資料修正(DIY配方: 石凳子)、加入遊戲1.2.0版的植物內容(灌木)
+
+20200429
+* [Fixed] v2020042903 調整「@藝術品」指令使用者體驗與修正誤植內容、調整「是誰」指令bug
+* [Released] v2020042902 新增植物情報功能
+* [Update] v2020042901 調整「賣」、「做」指令
+
+20200428
+* [Released] v2020042802 新增蟲魚情報功能
+* [Fixed] v2020042801 資料修正(DIY配方: 常見庭園石、高聳庭園石、棕櫚樹燈)
+
+20200427
+* [Released] v2020042702 修正流量問題
+* [Fixed] v2020042701 資料修正(DIY配方: 鋼筋)
+
+20200426
+* [Released] v2020042601 說明文字修正、資料修正(DIY配方:圓木長椅、高架花籃、徽章門牌)
+* [Released] v2020042601 新增化石查詢、藝術品查詢(辨識功能與真實資訊
+
+20200424
+* [Released] v2020042402 新增化石查詢、藝術品查詢
+* [Fixed] v2020042401 修正資料(DIY配方名稱:野外圓木長椅、銀河系地板、--椰子燈--)
+
+20200423
+* [Fixed] v2020042301 修正資料(DIY配方名稱:鑄鐵花園長椅、鐵甲面罩、金頭盔；島民生日太平)
+
+20200422
+* [Released] v2020042203 修正資料(DIY配方名稱:流水素麵；島民名稱范妮莎、毬藻)
+* [Released] v2020042202 新增生日查詢、個性查詢
+* [Fixed] v2020042201 加入資料(鑄鐵花園長椅、草編後背包)
+* [Fixed] v2020042201 修正資料(日落蛾名稱錯誤、金色糞金龜名稱錯誤、俞司廷名稱錯誤)
+
+20200421
+* [Released] v2020042002 新增蟲類、魚類查詢售價
+* [Fixed] v2020042101 加入資料(高架花籃)
+
+
+20200420
+* [Released] v2020042002 新增可以查詢種族功能
+* [Fixed] v2020042001 修正DIY工作台比對問題
+
+
+20200419
+* [Fixed] v2020041902 修正島民英文名稱大小寫比對問題
+* [Fixed] v2020041901 調整找尋島民敏感度，僅有「結尾為**是誰**」、「開頭為**誰是**」會被進行搜尋
+
+---
+# 致謝
+* 梓鈞
+* ShihChi Hsu
+* 阿D(許仲廷)
+* 林澄子
+* 林孟璇
+* KeKe
+
+## 特別感謝
+提供所有回報的人🙏<br> 如果您也有提供資料並想公布致謝名單，請與我聯絡😃
+
+## 我也想貢獻
+如果您對資料校正翻譯也有興趣，歡迎連絡我
+"
+16,cocopon/acqr,TypeScript,"# ACQR: QR code generator for Animal Crossing
+
+
+![overview](https://user-images.githubusercontent.com/602961/79967363-b056e880-84c9-11ea-89e2-1d563bcbe017.png)
+
+
+## Features
+- Auto scaling and quantizing input image
+- Customizing title and author
+- Image preview
+
+
+## Setup
+
+```
+$ npm install -g @cocopon/acqr
+```
+
+## Usage
+
+```
+$ acqr in.png
+$ acqr in.png --title 'Title' --author 'Author' --output out.png
+$ acqr in.png --preview preview.png
+```
+"
+17,younata/Swift-Crossing,Swift,"An animal crossing clone in swift
+
+
+[There's a Pivotal Tracker project for this](https://www.pivotaltracker.com/n/projects/1293068)."
+18,jameskokoska/AnimalCrossingNH-App,Dart,"# ACNH Pocket Guide
+This version written in Flutter is no longer maintained. See https://github.com/jameskokoska/AnimalCrossingNH-App-React for the new version written in React Native.   
+Written in Flutter, supporting iOS and Android, with a modern and well polished design ACNH Pocket Guide is the best guide for tracking your collection as you progress through the game. View information on collectibles and creatures, as well as upcoming in game events. With the latest game information, this is the one stop for all your ACNH needs.
+## Release
+https://play.google.com/store/apps/details?id=com.acnh.pocket_guide
+
+## Technical Features
+ - Read and save information
+ - Read information from JSON database efficiently
+ - Optimization of lists views and database access
+ - Classes and functions to allow for modular programming page design
+ - Python script to easily split up spreadsheet JSON into multiple files, for easy database updating
+ - UI planning done all in Adobe XD, see UI Assets folder
+
+## Features
+
+- Dark mode
+- Modern and polished interface and design
+- Upcoming events list + Villager birthdays
+- Active creatures list
+- Fish tracking + fish shadows
+- Bug tracking
+- Sea creatures tracking + sizes
+- Fossils collection tracking
+- Art collection tracking
+- Villager information
+- Crafting materials and tools guide
+- DIY recipe sources
+- Furniture and variations collection
+- Clothing and variations collection
+- Flooring and wallpaper collections
+- Slider song collection
+- Emoticon collection
+- Store hours
+- Construction page and costs
+- Television program guide
+- Weather percentage guide
+- Seasons information and resource availability
+
+## Screenshots
+Can be seen here: https://play.google.com/store/apps/details?id=com.acnh.pocket_guide
+or below:
+| ![Screenshot 1](/Promotional/1.jpg)  | ![Screenshot 2](/Promotional/2.jpg) | ![Screenshot 3](/Promotional/3.jpg) |
+| ------------- | ------------- | ------------- |
+| ![Screenshot 4](/Promotional/4.jpg)  | ![Screenshot 5](/Promotional/5.jpg) | ![Screenshot 6](/Promotional/6.jpg) |
+| ![Screenshot 7](/Promotional/7.jpg)  | ![Screenshot 8](/Promotional/8.jpg) | ![Screenshot 9](/Promotional/9.jpg) |
+| ![Screenshot 10](/Promotional/10.jpg)  |
+"
+19,AustinTSchaffer/animal-crossing-crafting-recipe-database,Python,"# Animal Crossing: Crafting Recipe Database
+
+This repository contains a few inter-related applications that process, serve, and display
+data related to all of the crafting recipes from the game: **Animal Crossing: New Horizons**.
+
+A big inspiration for this project was and is the
+[Stardew Profits](https://thorinair.github.io/Stardew-Profits/) web application, which helps
+users figure out which crops to plant in order to maximize profits.
+
+
+## Web Scraper (`data/app.py`)
+
+This component of the application is a web scraper that uses Selenium to scrape a few pages from
+the [Fandom Animal Crossing Wiki](https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki)
+in order to generate a JSON document that contains all of the information on crafting recipes
+and raw materials from the Wiki.
+
+
+## GraphQL API (`graphql-backend/app.py`)
+
+This component serves the data generated by the web scraper as a GraphQL API, containing the
+following endpoints:
+
+- `wikiBaseUrl: String`: Returns the base URL for the Animal Crossing Fandom Wiki.
+- `rawMaterial(id: String): RawMaterial`: Returns a single raw material, using the raw material's ID.
+- `rawMaterials: [RawMaterial]`: Returns a list of all raw materials.
+- `recipe(id: String):` Recipe: Returns a single recipe using the recipe's ID.
+- `recipes(rawMaterialId: StringrecipeIds: [String]): [Recipe]`: Returns a list of recipes. Has a few filter options.
+- `craftableRecipes(rawMaterials: [CraftableRecipeRawMaterialArg]): [CraftableRecipeResponse]`: Returns a list of recipes that can be crafted based on a list of raw materials.
+
+
+## Web Interface
+
+The intent of was to also provide a web interface that allowed users to easily answer questions about
+all of the crafting recipes that are available in the game. Some of the questions that I had in mind
+while playing the game and working on the web scraper and backend API were:
+
+- What are all of the recipes that use iron nuggets? Clay? Hardwood?
+- How much are each of those recipes worth?
+- I don't have this recipe... where can I get it?
+- How many of this recipe can I craft based on what I currently have on hand?
+- Are there any recipes that are worth more than others, relative to the materials that each requires?
+- What is the maximum profit that I can make from all of the wood, stone, iron, and clay that I have and what do I need to craft to achieve that?
+
+Work on this component of the application has not yet begun. Please let me know if you are interested
+in working on the web interface component by opening an issue on this repository or by emailing me at.
+
+> Austin Schaffer
+> 
+> schaffer.austin.t (at) gmail.com
+
+Part of the reason why work on the web interface was never started was because catching Tarantulas and
+playing the Stalk Market are vastly more profitable, relative to the work required. I still believe that
+the crafting system in the game is interesting and exploitable, and this application may still be useful
+to those who are looking to maximize their profit on the materials that they've acquired over time.
+
+
+## Analysis
+
+**Caveat:** Nintendo could change the pricing model for **Animal Crossing: New
+Horizons** at any time, which could invalidate the results of this analysis
+altogether. Also the data that this analysis was based on was effectively
+crowd-sourced from the Animal Crossing Fandom Wiki on April 7th, 2020. On that
+date, not all of the recipes available in the game were fully documented in the
+Wiki and some of the pricing and materials data that was documented in the Wiki
+may have been inaccurate.
+
+In general, most of the craftable items in the game have a sell price that is
+equal to double the price of all of the raw materials that went into the recipe
+put together. Taking the Hearth as an example, the Hearth recipe requires:
+
+- 2 bamboo pieces, worth 80 bells each
+- 4 clay, worth 100 bells each
+- 5 hardwood, worth 60 bells each
+- 5 iron nuggets, worth 375 bells each
+
+If you sold all of these raw materials on their own, you would receive 2735
+bells. If you elect to craft those materials into a hearth then sell the hearth,
+you would receive 5470 bells.
+
+This formula works across all crafting materials with the exception of 4 recipes
+where the sell price of the completed recipe is worth MORE than double the price
+of the materials that were used to craft the recipe and 23 recipes where the
+sell price is LESS than double the price of the materials.
+
+The following 4 recipes are worth more than double the price of the materials that
+were used to craft them.
+
+| Recipe             | Value of Materials | Value of Recipe | VoR / VoM |
+| ------------------ | ------------------ | --------------- | --------- |
+| Flimsy fishing rod | 25                 | 100             | 4         |
+| Flimsy net         | 25                 | 100             | 4         |
+| Fish bait          | 60                 | 200             | 3 1/3     |
+| Pitfall seed       | 40                 | 140             | 3 1/2     |
+
+The following 23 recipes are worth less than double the price of the materials
+that were used to craft them. If you're looking to generate cash, do not craft
+these recipes. Also interesting to note is that all of the recipes that use gold
+nuggets show up in this list, meaning there's no way to increase the value of a
+gold nugget.
+
+| Recipe               | Value of Materials | Value of Recipe | VoR / VoM          |
+| -------------------- | ------------------ | --------------- | ------------------ |
+| Axe                  | 655                | 625             | 0.9541984732824428 |
+| Flimsy shovel        | 300                | 200             | 0.6666666666666666 |
+| Shovel               | 675                | 600             | 0.8888888888888888 |
+| Fishing rod          | 400                | 600             | 1.5                |
+| Net                  | 400                | 600             | 1.5                |
+| Flimsy watering can  | 300                | 200             | 0.6666666666666666 |
+| Watering can         | 675                | 600             | 0.8888888888888888 |
+| Slingshot            | 300                | 225             | 0.75               |
+| Golden slingshot     | 10300              | 10300           | 1.0                |
+| Birdbath             | 450                | 400             | 0.8888888888888888 |
+| Palm-tree lamp       | 2640               | 3280            | 1.2424242424242424 |
+| Aroma holder         | 400                | 600             | 1.5                |
+| Coconut juice        | 500                | 500             | 1.0                |
+| Golden arowana model | 30000              | 30000           | 1.0                |
+| Gold bars            | 30000              | 30000           | 1.0                |
+| Golden candlestick   | 20000              | 20000           | 1.0                |
+| Golden dishes        | 10000              | 10000           | 1.0                |
+| Golden dung beetle   | 30000              | 30000           | 1.0                |
+| Coconut wall planter | 550                | 600             | 1.0909090909090908 |
+| Golden gears         | 11125              | 11125           | 1.0                |
+| Gold armor           | 80000              | 80000           | 1.0                |
+| Leaf                 | 50                 | 80              | 1.6                |
+| Medicine             | 330                | 100             | 0.3030303030303030 |
+
+If you ignore those 27 recipes and gold nuggets, you can generate a table of the
+value of each crafting material when used in a crafting recipe by doubling its
+sell price.
+
+| Raw Material         | Sell Price When Crafted | Stack Size | Value of a Stack |
+| -------------------- | ----------------------- | ---------- | ---------------- |
+| Iron nugget          | 750                     | 30         | 22500            |
+| Young spring bamboo  | 400                     | 30         | 12000            |
+| Earth Egg            | 400                     | 30         | 12000            |
+| Stone Egg            | 400                     | 30         | 12000            |
+| Leaf Egg             | 400                     | 30         | 12000            |
+| Wood Egg             | 400                     | 30         | 12000            |
+| Sky Egg              | 400                     | 30         | 12000            |
+| Water Egg            | 400                     | 30         | 12000            |
+| Coconut              | 1000                    | 10         | 10000            |
+| Clay                 | 200                     | 30         | 6000             |
+| Wasp nest            | 600                     | 10         | 6000             |
+| Stone                | 150                     | 30         | 4500             |
+| Bamboo piece         | 160                     | 30         | 4800             |
+| Wood                 | 120                     | 30         | 3600             |
+| Hardwood             | 120                     | 30         | 3600             |
+| Softwood             | 120                     | 30         | 3600             |
+| Cherry-blossom petal | 400                     | 10         | 4000             |
+| Fruit                | 200 (Regardless)        | 10         | 2000             |
+| Clump of weeds       | 20                      | 99         | 1980             |
+| Tree branch          | 10                      | 30         | 300              |
+| Fossil               | 200                     | 1          | 200              |
+
+From this table, you can see that only stacks of bunny day eggs, coconuts, young
+spring bamboo, and iron nuggets are worth more than a single tarantula or
+scorpion. I personally would argue that the effort required to get a stack of
+any one of those is higher than the effort required to set up a viable tarantula
+island and then catch a few. Regardless, this table may still useful when
+choosing between a partial stack of wood and the fish that you just caught, or
+motivating yourself to turn all of the unused materials in your possession into
+a little extra cash.
+
+## Recommendations
+
+Don't just sell all of your resources, craft them into stuff in order to double
+their value. ...except gold nugs, those are always worth 10k. Also, just sell
+your extra sticks. The crafting recipes that use them really aren't worth the
+trouble.
+
+If you REALLY want to make loads o' money, save a little cash and play the Stalk
+Market. Just like in America, you don't get rich in Animal Crossing by working.
+
+Most importantly, don't be like me and try to optimize every detail. Just play
+the game and have fun.
+"
+20,Lizzip/animal_crossing_checklist,JavaScript,"# animal_crossing_checklist
+Bug and Fish checklist for tracking progress in Animal Crossing: New Horizons
+
+Hosted at my [personal website](http://magicsheepgames.co.uk/animalcrossing.html)"
+21,t238wang/AnimalCrossingHelper,JavaScript,"# AnimalCrossingHelper
+## Feature(s) available now:
+My initial goal is to make this app a ""swiss army knife"" app
+### Fishing Index
+Having the exact ordering of the fishing index in app so it's super easy to cross-reference with your own record. The checkmark will show what fish are available for you. Good luck fishers.
+![fishing index screenshot](screenshots/fish.jpg)
+
+## Features I will be working on:
+1. Turnips trading dashboard, where app shows a list of users' turnips price and their islands' access code so villigers can find the best island to sell their turnips.
+2. QR code generator. Generate QR code by importing pictures.
+
+## Featires I might be working on(please please contribute to it)
+1. add southern hemisphere info for fishing index
+2. add English/other languages for index
+3. add other index, such as bugs, villagers, npcs, ... etc
+
+## Where can I download this app?
+### Android
+https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40t238wang/acnh-helper-854de302af2c4a0794269f00ff19a5a9-signed.apk
+
+### iOS
+please clone this repo, register expo, run expo yourself. 
+
+## Supported/Tested devices
+This app works on OnePlus7Pro and iPads. I know this won't work on some smaller devices because they nasty way I organize UI. I will fix when I got a chance, or, please contribute.
+
+"
+22,leilaapsilva/AnimalCrossingMemoryGame,JavaScript,"# Animal Crossing - Memory Game
+## Jogo da memória baseado em Animal Crossing
+
+### Cards com imagens dos [amiibos](https://animal-crossing.com/amiibo/collections/series-1-4-amiibo-cards) do jogo
+
+Jogue em:
+[leilaapsilva.github.io/AnimalCrossingMemoryGame](leilaapsilva.github.io/AnimalCrossingMemoryGame)
+
+
+
+![Imagem do jogo](img/printscreen.png)
+
+Atualizado em 16/07/20
+
+TO DO: Deixar o jogo de forma genérica, de modo que possam ser criados jogos da memória de outros temas
+"
+23,Soryyyn/Critterpedia,Vue,"<p align=""center"">
+  <img src=""https://raw.githubusercontent.com/soryyyn/critterpedia/master/assets/titleSprite.png"" width=""600"" title=""titleCard"">
+</p>
+
+---
+
+I'm aiming to make catching all the creatures in Animal Crossing: New Horizons easier for everyone with this project! It (currently) shows all fish & bugs but if more are added I'm happy to add them to the website/project! If you sign up, you'll also be able to save, favorite and see if the current creature is available to catch!
+
+<br>
+
+## 🌱 What technologies am I using for this project?
+This project uses the awesome Animal Crossing API: http://acnhapi.com. It makes all creatures and more available, and so it makes it easier to maintain this project!
+
+It is also made with the Vue.js framework to make it a SPA, a Mongo Database and more! I'm open to answer questions!
+
+<br>
+
+## 🍑 What are my future plans with this project?
+I'm looking to keep this project up to date at all times, or maybe as long as the game or the community keep this game alive! If you would like to help me support this project or more of my future projects, it would be awesome if you'd buy me a [hot chocolate](https://www.buymeacoffee.com/soryn) or donate directly through [PayPal](https://www.paypal.me/soryyyn) to help keep this project free for as many people as possible!
+"
+24,714589373/AnimalCrossingUnity,C#,"# AnimalCrossingUnity
+An Animal Crossing Fanproject
+"
+25,custardplanet/villager-bot,Python,
+26,maryehuerta/animal-crossing-music,JavaScript,"# Animal Crossing Music
+
+## Background 
+Music web-app that plays 24 hour *Animal Crossing New Leaf* music. Each hour there is a different song played corresponding to the song being played in that hour of Animal Crossing.
+
+This was create for me to learn more about React and understand css more. Definately not complete but I'll add on every once in a while.
+
+## History 
+### Janurary 2018 
+* New Earth! Created with Affinity Designer 🌏
+* Characters and Bugs added 🐶 🐛
+![alt text](https://github.com/maryehuerta/animal-crossing-music/raw/master/screenshots/Screen%20Shot%202018-01-11%20at%204.57.09%20PM.png ""Changes from 2018"")
+
+### September 2017  
+* Added Music 🎶
+* Cloud animations ☁️ ☁️ ☁️
+![alt text](https://github.com/maryehuerta/animal-crossing-music/raw/master/screenshots/Screen%20Shot%202017-09-22%20at%2011.36.26%20AM.png ""Changes from October 2017"")
+
+
+
+"
+27,theastropath/turbot,Python,"<img align=""right"" src=""https://raw.githubusercontent.com/theastropath/turbot/master/turbot.png"" />
+
+# Turbot
+
+[![build][build-badge]][build]
+[![pypi][pypi-badge]][pypi]
+[![python][python-badge]][python]
+[![codecov][codecov-badge]][codecov]
+[![black][black-badge]][black]
+[![mit][mit-badge]][mit]
+
+A Discord bot for everything _Animal Crossing: New Horizons_.
+
+## 📱 Using Turbot
+
+Once you've connected the bot to your server, you can interact with it over
+Discord via the following commands in any of the authorized channels.
+
+- `!about`: Get information about Turbot
+- `!help`: Provides detailed help about all of the following commands
+- `!export`: Send a DM with all the data Turbot has associated with you
+
+### 💸 Turnips
+
+![predictions](https://user-images.githubusercontent.com/1903876/82263275-63730000-9917-11ea-94d1-38661784097c.png)
+
+These commands help users buy low and sell high in the stalk market.
+
+- `!best`: Look for the current best sell or buy
+- `!buy`: Save a buy price
+- `!clear`: Clear your price data
+- `!graph`: Graph price data
+- `!history`: Get price history
+- `!lastweek`: Get graph for last week's price data
+- `!oops`: Undo the last price data
+- `!predict`: Predict your price data for the rest of the week
+- `!reset`: Reset all users' data
+- `!sell`: Save a sell price
+
+### ℹ️ User Preferences
+
+![user-info](https://user-images.githubusercontent.com/1903876/82263272-61a93c80-9917-11ea-9e8c-ded5eb1f652e.png)
+
+These commands allow users to set their preferences. These preferences are used
+to make other commands more relevant, for example by converting times to the
+user's preferred timezone.
+
+- `!info`: Get a user's information
+- `!pref`: Set a user preference; use command to get a list of available options
+
+### 📮 Collectables
+
+![collecting](https://user-images.githubusercontent.com/1903876/82263264-5f46e280-9917-11ea-9c1e-90d4077013ca.png)
+
+When a community of users tracks collectables and trades them between each
+other, everyone finishes collecting everything in the game so much more quickly
+than they would on their own. Turbot supports collecting:
+
+- 🦴 Fossils
+- 🐞 Bugs
+- 🐟 Fish
+- 🖼️ Art
+- 🎶 Songs
+
+#### 📈 Managing your Collection
+
+- `!collect`: Mark something as collected
+- `!collected`: Show the things you've collected so far
+- `!count`: Count the number of collected things you have
+- `!needed`: Find out what collectables are needed by you and others
+- `!search`: Search for someone who needs something you're looking to give away
+- `!uncollect`: Remove something from your collection
+- `!uncollected`: Get a list of things that you haven't collected yet
+
+#### 🤔 Helper Utilities
+
+Some collections require additional support such as the `!art` command that
+helps users tell fake art from real art. The `!bugs` and `!fish` commands
+tell users when and where to catch those critters. These commands also know what
+you've already collected and will tailor their responses to the user.
+
+- `!art`: Get information on an art piece
+- `!bugs`: Get information on bugs
+- `!fish`: Get information on fish
+- `!new`: Get information on newly available fish and bugs
+
+### 👑 Administration
+
+- `!authorize`: Configure which channels Turbot can operate in
+
+## 🤖 Running Turbot
+
+First install `turbot` using [`pip`](https://pip.pypa.io/en/stable/):
+
+```shell
+pip install turbot
+```
+
+Then you must configure two things:
+
+1. Your Discord bot token.
+2. The list of channels you want `turbot` to monitor. (Default: All channels)
+
+To provide your Discord bot token either set an environment variable named
+`TURBOT_TOKEN` to the token or paste it into a file named `token.txt`.
+
+For the list of channels you can provide channel names on the command line using
+any number of `--channel ""name""` options. Alternatively you can create a file
+named `channels.txt` where each line of the file is a channel name. You can
+also specify them via the environment variable `TURBOT_CHANNELS` as a semicolon
+delimited string, for example: `export TURBOT_CHANNELS=""some;channels;here""`.
+You can also leave this unspecified and Turbot will operate within all channels,
+then you can specify a smaller set of channels using the `!authorize` command.
+
+By default Turbot will use sqlite3 as its database. You can however choose to
+use another database by providing a [SQLAlchemy Connection URL][db-url]. This
+can be done via the `--database-url` command line option or the environment
+variable `TURBOT_DB_URL`. Note that, at the time of this writing, Turbot is only
+tested against sqlite3 and PostgreSQL.
+
+More usage help can be found by running `turbot --help`.
+
+## ⚛️ Heroku Support
+
+Turbot supports deployment to Heroku out of the box. All you need is your
+Discord bot token and you're ready to go! Just click the Deploy to Heroku
+button, below.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)][deploy]
+
+For more details see [our documentation on Heroku support](HEROKU.md).
+
+## 🐳 Docker Support
+
+You can also run Turbot via docker. See
+[our documentation on Docker Support](DOCKER.md) for help.
+
+## ❤️ Contributing
+
+If you'd like to become a part of the Turbot development community please first
+know that we have a documented [code of conduct](CODE_OF_CONDUCT.md) and then
+see our [documentation on how to contribute](CONTRIBUTING.md) for details on
+how to get started.
+
+---
+
+[MIT][mit] © [TheAstropath][theastropath], [lexicalunit][lexicalunit] et [al][contributors]
+
+[black-badge]:      https://img.shields.io/badge/code%20style-black-000000.svg
+[black]:            https://github.com/psf/black
+[build-badge]:      https://github.com/theastropath/turbot/workflows/build/badge.svg
+[build]:            https://github.com/theastropath/turbot/actions
+[codecov-badge]:    https://codecov.io/gh/theastropath/turbot/branch/master/graph/badge.svg
+[codecov]:          https://codecov.io/gh/theastropath/turbot
+[contributors]:     https://github.com/theastropath/turbot/graphs/contributors
+[db-url]:           https://docs.sqlalchemy.org/en/latest/core/engines.html
+[deploy]:           https://heroku.com/deploy
+[lexicalunit]:      http://github.com/lexicalunit
+[mit-badge]:        https://img.shields.io/badge/License-MIT-yellow.svg
+[mit]:              https://opensource.org/licenses/MIT
+[pypi-badge]:       https://img.shields.io/pypi/v/turbot
+[pypi]:             https://pypi.org/project/turbot/
+[python-badge]:     https://img.shields.io/badge/python-3.7+-blue.svg
+[python]:           https://www.python.org/
+[theastropath]:     https://github.com/theastropath
+"
+28,punctuations/ac,JavaScript,"# Animal Crossing Time 🍃
+
+<a href=""https://www.producthunt.com/posts/ac?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ac"" target=""_blank""><img src=""https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=279749&theme=dark"" alt=""ac - Animal Crossing music depending on the local time & weather! | Product Hunt"" style=""width: 250px; height: 54px;"" width=""250"" height=""54"" /></a>
+
+Animal Crossing Time is a simple site inspired by [crossingti.me](https://crossingti.me) that plays different Animal Crossing songs depending on the time! It is currently in beta so please know that there **will** be bugs, if you happen to find some please either create an issue, or reach out ot me on [twitter](https://twitter.com/wwwdotca) or [discord](https://discord.gg/ASuqg75pAP).
+
+#### 📝 Have suggestions?
+
+Feel free to leave suggestions in the [discussions](https://github.com/punctuations/ac/discussions) or contact me with suggestions you have to better this project and make it stand out! You can contact me with the methods stated above.
+
+#### 🚀 I cloned the repo how do I run a development server?
+
+Start with:
+
+```bash
+npm i
+```
+
+Then start up the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open your browser and go to [localhost:3000](http://localhost:3000)!
+
+#### ❔ What's Next.js?
+
+Next.js is a react framework for production.
+
+**You can learn more about Next.js with the links below:**
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+"
+29,han-jinkyu/animal-crossing-turnip,JavaScript,"# animal-crossing-turnip
+게임 '동물의 숲'의 무 가격을 예측하는 사이트
+
+A site that predicts turnip prices of Game 'Animal Crossing'
+
+https://animal-crossing-turnip.web.app
+
+## Tech stack
+### Language
+- Node.js (v13.12.0)
+
+### Backend
+- Firebase
+
+### Frontend
+- Vue.js
+- Bootstrap 4
+
+## References
+https://gist.github.com/Treeki/85be14d297c80c8b3c0a76375743325b
+"
