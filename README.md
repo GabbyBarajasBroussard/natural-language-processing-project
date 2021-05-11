@@ -10,8 +10,7 @@
 <img src='animal_crossing.jpg' style = 'width:1100px;height:700px'/>
 
 ## Project Summary:
-- 
- 
+- The purpose of this project is to scape data from Github repository README files covering different Animal Crossing topics. The goal is to build a machine learning model that will predict what programming language the repository is based off of the given text in the README.
 
 ## Project Goals:
 - Deliver a notebook presentation of models used to isolate drivers of increased length of time spent in the hospital.
@@ -66,14 +65,13 @@ Each step in my process is recorded and staged on a Trello board at: https://tre
 - Start by cloning the github repository on your From your terminal command line, type:
  git@github.com:GabbyBarajasBroussard/natural-language-processing-project.git
 
-Download the following files from https://github.com/GabbyBarajasBroussard/natural-language-processing-project to your working directory:
+- Download the following files from https://github.com/GabbyBarajasBroussard/natural-language-processing-project to your working directory:
+ - acquire.py
+ - prepare.py
+ - wrangle.py
 
-acquire.py
-prepare.py
-wrangle.py
 ## Sources:
-Data Obtained From Github Repository Search Scrape
-Photo by 
-Image From: https://www.nintendo.co.uk/Games/Nintendo-Switch/Animal-Crossing-New-Horizons-1438623.html 
+- Data Obtained From Github Repository Search Scrape
+- Image From: https://www.nintendo.co.uk/Games/Nintendo-Switch/Animal-Crossing-New-Horizons-1438623.html 
 
   
